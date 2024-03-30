@@ -1,0 +1,26 @@
+.note-card{
+    border: 1px solid #474646;
+    padding: 5px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: aliceblue;
+    position: relative; 
+}
+.note-card-category{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+
+}
+.delete-icon{
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+}

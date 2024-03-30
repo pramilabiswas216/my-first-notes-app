@@ -4,6 +4,7 @@ import './index.css';
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import NewNote from './views/NewNote/NewNote.js';
 import Home from './views/Home/home';
+import {Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([
   {
@@ -11,12 +12,16 @@ const router = createBrowserRouter([
     element:<Home/>
   },
   {
-    path:"/",
+    path:"/note",
     element:<NewNote/>
   }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<RouterProvider router={router}/>);
+root.render(<>
+<Toaster />
+<RouterProvider router={router}/>
+</>
+);
 
 
