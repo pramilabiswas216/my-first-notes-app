@@ -118,7 +118,7 @@ app.delete("/notes/:id", async(req, res)=>{
    await Note.deleteOne({_id: id})
    res.json({
     success:true,
-    message:"Note delte succesfully",
+    message:"Note delete succesfully",
     data:null
    })
    
