@@ -1,8 +1,10 @@
 import React from 'react'
 import "./NoteCard.css";
 import DeleteIcon from "./delete-icon.png";
+import UpdateIcon from "./update-icon.png";
 import axios from 'axios';
 import toast from 'react-hot-toast';
+import {Link} from "react-router-dom";
 
 function NoteCard({_id, tittle,content,category, loadNotes}) {
 
@@ -22,6 +24,13 @@ function NoteCard({_id, tittle,content,category, loadNotes}) {
               alt='delete-icon'
               className='delete-icon'
               onClick={deleteNote}/>
+
+              <Link to={`/update/${_id}`}>
+              <img src={UpdateIcon}
+              alt='update-icon'
+              className='update-icon'
+              />
+              </Link>
             </div>
     
   )

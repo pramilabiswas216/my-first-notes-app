@@ -5,6 +5,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import NewNote from './views/NewNote/NewNote.js';
 import Home from './views/Home/home';
 import {Toaster } from "react-hot-toast";
+import UpdateNote from './views/UpdateNote/UpdateNote.js';
 
 const router = createBrowserRouter([
   {
@@ -12,9 +13,14 @@ const router = createBrowserRouter([
     element:<Home/>
   },
   {
-    path:"/note",
+    path:"/new",
     element:<NewNote/>
+  },
+  {
+    path:"/update/:id",
+    element:<UpdateNote/>
   }
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
